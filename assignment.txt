@@ -1,0 +1,51 @@
+I need to move a Unity project to GitHub.
+The professor suggests to add the project to GitHub without GitHub CLI.
+For all of this I'll need Gitbash.
+Here is the professor's step by step explanation:
+
+Step 1 should be simple - you can create a repository by logging into the GitHub website and clicking the new repository button (the linked page has an image of this).
+
+Your goal during Steps 2 and 3 is to open the Unity project you just created (the one with an assets folder and other Unity content inside it) in GitBash.
+*You can basically just combine these two steps by right clicking on your project folder and using "GitBash here" to open it in GitBash.
+
+During steps 4 - 6 you will enter several commands in GitBash.
+During this process you might get a message about "line endings" - that is okay and you don't need to worry about it.
+Make sure you have closed the Unity editor before this step if you haven't already.
+If you get any errors other than the "line endings" one, make sure you are entering all the correct commands.
+* git init
+* git add assignment.txt
+* git add code.py
+* git commit -m "First commit"
+* git branch -M main
+* git status
+
+During step 7, you will need to navigate to the repository you created on the GitHub website.
+This is the same one you created in step 1 and you should be able to find it by logging in to the GitHub website - your repositories show up on the left side of the screen.
+You need to get a .git link during this step just like the link you got during Tutorial 1, and the linked page has an image of what this looks like.
+* https://github.com/David-Tutor/David-Tutor.git
+
+Steps 8 and 9 should be simple.
+They involve several Git commands and you will need to cut and past the URL you got in the last step.
+Just be sure you enter them correctly and in the correct order.
+If you get stuck. check the announcements section - there are a few fixes for common problems people have in the announcements
+(check out the announcements titled "A note about Step 6 and Step 9 of Setting Up GitHub" 
+and "A tip if you have problems with Step 9 of the Setting up GitHub step).
+* git remote add origin https://github.com/David-Tutor/David-Tutor.git
+* git push -u origin master
+
+When you are done with this process,
+you should have a GitHub repository and the project you created during the first part of this tutorial should be stored on the main branch of that repository.
+You'll need to take a screenshot of this for the assignment submission process. 
+
+As a final step, you will set up a gitignore file for your repository.
+This file will tell GitHub to "ignore" changes to certain files and will make it easier to make changes to the repository. 
+
+You can do this by clicking Add file -> New File on the web page for your repository - you can see the button in the screenshot above.
+Type .gitignore in the text box on the next page and look to the right of it:
+you will see a note that says "Want to use a git ignore template?" and a button next to it thats says "Choose .gitignore."
+Click that button and type "Unity" into the search box; it will generate a template file for you.  
+
+Finally, scroll to the bottom of the page and click the "Commit new file" button.
+This should set everything up correctly!
+
+At this point, I would not open your Unity project or make any changes to it until you have also completed the next step.
